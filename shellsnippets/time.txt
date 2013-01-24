@@ -1,0 +1,13 @@
+SQL> select sysdate, current_date from dual;
+
+SYSDATE   CURRENT_D                                                             
+--------- ---------                                                             
+22-DEC-12 22-DEC-12                                                             
+
+SQL> select sysdate, current_date from dual;
+
+SYSDATE   CURRENT_D                                                             
+--------- ---------                                                             
+22-DEC-12 22-DEC-12                                                             
+
+SQL> spool off;

@@ -1,0 +1,14 @@
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STATE_ID                                  NOT NULL NUMBER(20)
+ COUNTRY_ID                                         NUMBER(20)
+ STATE_CODE                                NOT NULL VARCHAR2(50)
+ STATE_DESC                                NOT NULL VARCHAR2(200)
+ WEEKEND_ID                                         NUMBER(20)
+ ALT_WEEKEND_ID                                     NUMBER(20)
+ SORT_PRIORITY                                      NUMBER(5)
+ LAST_MAIN_DATE                                     DATE
+ JERK                                               NUMBER(20)
+ DISABLE                                            NUMBER(1)
+ STATE_GROUP_ID                                     NUMBER
+
