@@ -1,0 +1,4 @@
+#/bin/sh
+
+
+git remote add origin git@github.com:joshluisaac/profiterataskrunner.git && git push -u origin master
