@@ -1,0 +1,11 @@
+#!/bin/bash
+
+moreverbose="-irHne"
+lessverbose="-ilre"
+
+
+#hili() { e="$1"; shift; grep --col=always -Eih "$e|$" "$@"; }
+
+#alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto'
+
+grep $lessverbose "$1" --include=*.{xml,frm,,tbl,event,properties,sql,htlm,css,js} --exclude-dir="./.svn" .

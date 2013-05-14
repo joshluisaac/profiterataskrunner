@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#This will search and replace All Files with the following extensions xml,frm,event,properties
+
+
+
+#syntax
+#grep -lr -e '<oldword>' * | xargs sed -i 's/<oldword>/<newword>/g'
+
+#using xargs we don't have to loop on every record/row returned by the grep command.
+#sed "s/$date1/$date2/g" wlacd_stat.xml >tmp.xml mv tmp.xml wlacd_stat.xml
+
+
+oldstring="$1"
+newstring="$2"
+moreverbose="-irHne"
+lessverbose="-ilre"
+
+#grep -ilre "$1" --include=*.{xml,frm,event,properties} --exclude-dir="./.svn" . | xargs sed -i "s/$oldstring/$newstring/g"
+
+
+grep $lessverbose "$1" --include=*.{xml,frm,,tbl,event,properties,sql,htlm,css,js} --exclude-dir="./.svn" . | xargs sed -i "s/$oldstring/$newstring/g"
