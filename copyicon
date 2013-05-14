@@ -1,19 +1,11 @@
 #!/bin/bash
 
-projectPath="/media/allihave/ptrworkspace/bimb-poweragency/clientconfig/images/"
-destination="../../carma2-trunk/clientconfig/images/"
+projectPath="$1"
+destination="$2"
 
 iconPath=(
 "down_100.png"
 "up_100.png"
-"play_18.png"
-"save1_18.png"
-"add_18.png"
-"close_18.png"
-"down_100.png"
-"edit_gear.png"
-"disable_18.png"
-"up_128.png"
 )
 
 for i in "${iconPath[@]}"
