@@ -12,6 +12,13 @@ then
         exit
 fi
 
+# Check the given file is exist #
+if [ ! -f $1 ]
+then
+        echo "Filename given \"$1\" doesn't exist"
+        exit
+fi
+
 tmpFileName="tmp.txt"
 cat /dev/null > $tmpFileName
 cat /dev/null > $2
